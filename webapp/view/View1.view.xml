@@ -1,0 +1,46 @@
+<mvc:View controllerName="lab07.L07UI5school.controller.View1" 
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" 
+xmlns="sap.m"
+xmlns:f="sap.ui.layout.form">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Button text="{i18n>load}" press="pressLoad"/>
+						<Button text="{i18n>sortName}" press="sortByName" class="sapUiSmallMarginBegin"/>
+						<Button text="{i18n>sortCity}" press="sortByCity" class="sapUiSmallMarginBegin"/>
+						<Button text="{i18n>filterCity}" press="filterByCity" class="sapUiSmallMarginBegin"/>
+						<HBox>
+							<List id="idList"
+								itemPress="pressItem"
+								items="{companiesModel>/companies/list}">
+								<StandardListItem
+									type="Navigation"
+									title="{companiesModel>name}">
+								</StandardListItem>
+							</List>
+							<f:SimpleForm
+								id="idForm"
+								layout="ResponsiveGridLayout">
+								<f:content>
+									<Label text="{i18n>name}"/>
+									<Input value="{companiesModel>name}"/>
+									<Label text="{i18n>address}"/>
+									<Input value="{companiesModel>address}"/>
+									<Label text="{i18n>city}"/>
+									<Input value="{companiesModel>city}"/>
+									<Label text="{i18n>quantity}"/>
+									<Input value="{companiesModel>quantity}"/>
+								</f:content>
+								
+							</f:SimpleForm>
+						</HBox>
+
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

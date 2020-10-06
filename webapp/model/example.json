@@ -1,0 +1,37 @@
+{
+	"companies": {
+		"area": "IT",
+		"updated":"02.12.2019",
+		"list": [{
+			"name": "T-Systems",
+			"address": "Kirova, 11",
+			"city": "Voronezh",
+			"quantity": "150"
+		}, {
+			"name": "Atos",
+			"address": "Truda, 65",
+			"city": "Voronezh",
+			"quantity": "89"
+		}, {
+			"name": "DataArt",
+			"address": "Stankevicha, 36",
+			"city": "Voronezh",
+			"quantity": "59"
+		}, {
+			"name": "DSR",
+			"address": "Svobody, 69",
+			"city": "Voronezh",
+			"quantity": "67"
+		}, {
+			"name": "BDO Unicon",
+			"address": "Varshavskoe, 125",
+			"city": "Moscow",
+			"quantity": "117"
+		}, {
+			"name": "Ventra IT",
+			"address": "Semenovskaya, 9",
+			"city": "Moscow",
+			"quantity": "132"
+		}]
+	}
+}
