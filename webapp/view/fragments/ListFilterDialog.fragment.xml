@@ -1,0 +1,18 @@
+<core:FragmentDefinition 
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Dialog
+			title="Filter"
+			class="sapUiPopupWithPadding"
+			resizable="true">
+				<Label text="Фильтр"/>
+				<Input id="idFilter" value="name" description="Выберите фильтрующее поле"/>
+				<Label text="Значение фильтра"/>
+				<Input id="idFilterValue" description="Например по марке BMW"/>
+				
+				<Button text="Закрыть" press="close"></Button>
+				<Button text="Фильтровать" press="filter"></Button>
+		
+	</Dialog>
+	
+</core:FragmentDefinition>

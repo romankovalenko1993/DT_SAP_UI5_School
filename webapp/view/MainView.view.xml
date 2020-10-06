@@ -1,0 +1,67 @@
+<mvc:View controllerName="lab15.L15UI5school.controller.MainView" 
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" 
+xmlns="sap.m"
+xmlns:f="sap.ui.layout.form">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Button text="{i18n>load}" press="pressLoad" class="sapUiSmallMarginBegin"/>
+						<Button text="{i18n>openFilter}" press="pressFilter" class="sapUiSmallMarginBegin"/>
+						<HBox>
+							<List id="idList"
+								itemPress="pressItem"
+								items="{carsModel>/cars/list}">
+								<StandardListItem
+									type="Navigation"
+									title="{carsModel>name}">
+								</StandardListItem>
+							</List>
+							<f:SimpleForm
+								id="idForm"
+								title="{= ${i18n>update} + ${carsModel>/cars/updated}}"
+								layout="ResponsiveGridLayout">
+								<f:content>
+									<Label text="{i18n>name}"/>
+									<Input value="{carsModel>name}"/>
+									
+									<Label text="{i18n>model}"/>
+									<Input value="{carsModel>model}"/>
+									
+									<Label text="{i18n>engine}"/>
+									<Input value="{carsModel>engine}"/>
+									
+									<Label text="{i18n>gear}"/>
+									<Input value="{
+											path: 'carsModel>gear', 
+										    type: '.transmissionType'}"/>
+										   
+									<Label text="{i18n>maxSpeed}"/>
+									<Input value="{
+											path: 'carsModel>maxSpeed',
+									        formatter: '.speedFormatter'}"/>
+									               
+									<Label text="{i18n>price}"/>
+									<Input value="{carsModel>price}"/>
+									
+									<Label text="{i18n>owner}"/>
+									<Input value="{
+											path: 'carsModel>owner',
+											formatter: '.ownerFormatter'}"/>
+									
+									<Label text="{i18n>card}"/>
+									<Input value="{
+											path: 'carsModel>card',
+											formatter: '.cardFormatter'}"/>
+								</f:content>
+							</f:SimpleForm>
+						</HBox>						
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
+
