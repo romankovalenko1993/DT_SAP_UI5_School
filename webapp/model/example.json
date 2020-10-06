@@ -1,0 +1,78 @@
+{
+	"cars": {
+
+		"updated":"02.12.2019",
+		"list": [
+		{
+			"name": "LADA",
+			"model": "Vesta",
+			"engine": "1.7",
+			"gear": "CVT",
+			"maxSpeed": "180",
+			"price": "550000",
+			"owner": "Ладьев Семён Викторович",
+			"card": "5486213545879652587"
+		},
+		{
+			"name": "Mercedes Benz",
+			"model": "S500",
+			"engine": "2.3",
+			"gear": "AT",
+			"maxSpeed": "250",
+			"price": "2700000",
+			"owner": "Бенц Александр Александрович",
+			"card": "1254365987452156555"
+		},
+		{
+			"name": "GAZ",
+			"model": "Volga",
+			"engine": "2.3",
+			"gear": "MT",
+			"maxSpeed": "110",
+			"price": "800000",
+			"owner": "Волгарев Сергей Валентинович",
+			"card": "3326587796558799123"
+		},
+		{
+			"name": "BMW",
+			"model": "sereal 7",
+			"engine": "2.6",
+			"gear": "AT",
+			"maxSpeed": "210",
+			"price": "2100000",
+			"owner": "Бекович Бернард Борисович",
+			"card": "1254777789653333555"
+		},
+		{
+			"name": "AUDI",
+			"model": "Q7",
+			"engine": "2.5",
+			"gear": "AT",
+			"maxSpeed": "235",
+			"price": "3100000",
+			"owner": "Удельцов Валерий Юрьевич",
+			"card": "2587963211478989789"
+		},
+		{
+			"name": "Porsche",
+			"model": "Panamero",
+			"engine": "2.7",
+			"gear": "AT",
+			"maxSpeed": "280",
+			"price": "5300000",
+			"owner": "Олигарх Виктор Викторович",
+			"card": "1111555577779999777"
+		},
+		{
+			"name": "Infinity",
+			"model": "QX56",
+			"engine": "2.5",
+			"gear": "AT",
+			"maxSpeed": "210",
+			"price": "3800000",
+			"owner": "Финивтев Вечаслав Романович",
+			"card": "111123455557899555"
+		}
+		]
+	}
+}
